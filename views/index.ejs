@@ -1,0 +1,11 @@
+<%- include('partials/header') -%>
+
+<h1 class="text-4xl">Bienvenido</h1>
+
+<% if (locals.isAuthenticated) { %>
+    <p>Sesión Iniciada. <a href="/profile" class="underline">Ver perfil</a>.</p>
+<% } else { %>
+    <p>Inicia Sesión aquí. <a href="/login" class="underline">Login</a>.</p>
+<% } %>
+
+<%- include('partials/footer') -%>
